@@ -25,6 +25,7 @@ section#first-page{
     border-bottom: black;
     border-width: 1px;
     border-style: ridge;
+    animation: slideInFromTop 1s ease-in;
 
 }
 
@@ -97,6 +98,7 @@ section#first-page{
     justify-content: center;
     align-items: center;
     margin-top: 160px;
+    animation: slideInFromBottom 1s ease-in;
 
 }
 
@@ -105,6 +107,8 @@ p#large-header{
     font-size: 64px;
     font-weight: 600;
     margin-bottom: 30px;
+
+
 }  
 /* Sub-Text */
 p.sub-header{
@@ -176,6 +180,7 @@ div#location{
     line-height: 0.2em;
     display: flex;
     justify-content: space-between;
+    animation: slideInFromLeft 1s ease-in;
 }
 
 div#location img{
@@ -233,7 +238,8 @@ section#images{
     margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center; 
+    animation: slideInFromLeft 1s ease-in;   
 }
 
 .image{
@@ -281,6 +287,7 @@ div#how{
 section#steps{
     display:block;
     flex-wrap: wrap; 
+    animation: slideInFromRight 1s ease-in;
     
 }
 .how-text{
@@ -337,6 +344,49 @@ span#footer-text{
     margin-top: 105px;
     margin-left: 233px;
 }
+
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+
 
 
 /* Media Responsive */
