@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* First Page styling */
+section#first-page{
+    background-image: url("../images/first-main.png");
+    height:716px;
+    margin: -5px -5px 0px -5px; 
+}
+
+/* All that pertains to the Navbar */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    height:116px;
+    border-bottom: black;
+    border-width: 1px;
+    border-style: ridge;
+
+}
+
+.navbar .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .sub-container{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;  
+    margin-right: 100px;
+    
+}
+
+.navbar .container img{
+    margin-left: 100px;
+}
+
+.navbar ul{
+    list-style-type: none;   
+    display: flex; 
+
+}
+
+.navbar ul li{
+    margin: 0px 30px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.navbar a:hover{
+    color:darkgrey;
+}
+
+/* Navbar button */
+#wallet{
+    padding: auto;
+    background-color: #2CAE77;
+    width: 185px;
+    height: 55px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    border-style: none;   
+}
+
+.navbar ul{
+    list-style-type: none;   
+    display: flex; 
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px; 
+}
+
+.header-text .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+
+}
+
+/* First Text */
+p#large-header{
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}  
+/* Sub-Text */
+p.sub-header{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-top: -10px;
+}
+
+/* Search for artists, events and venue */
+div#search{
+    width:676px;
+    height:82px;
+    background-color: rgb(0,0,0,0.7); 
+    margin: auto; 
+    margin-top: 20px;
+    border-style: ridge;
+    border-width: 1px;  
+    border-color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+input.search{
+    background-color: transparent; 
+    border:none;
+    width:400px;
+    font-size: 24px;
+    font-weight: 200;
+    margin-left: 10px;
+}
+
+#search input[type=search]{
+    color:white;
+}
+
+#search input:focus {
+    outline: none;
+}
+
+/* Search button */
+button#search{
+    color:white;
+    background-color: #2CAE77;
+    width:125px;
+    height:55px;
+    margin: auto;
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    border:none;
+}
+
+/* Section of the pages with black background */
+section#black-pages{
+    height:1968px;
+    overflow:auto;
+    background-color: #0a0a0a;
+    color: white;
+    margin-right: -5px;
+}
+
+/* Location and browse concerts */
+div#location{
+    height:190px;
+    margin-left: 100px;
+    padding-top: 150px;
+    line-height: 0.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+div#location img{
+    margin-left: 15px;
+    margin-top: 80px;
+ 
+}
+
+p#browse{
+    font-size: 24px;
+    font-weight: 100;
+}
+
+h1#browse{
+    font-size: 54px;
+    font-weight: 400;
+}
+div#lagos{
+    display: flex;
+    margin-top: -60px;
+}
+
+button#artist{
+    width:135px;
+    height:39px;
+    background-color: #182A23;
+    border-color: #c4c4c4;
+    border-radius: 30px;
+    border-width: 1px;
+    color:white;
+    font-size: 16px;
+}
+
+button#date{
+    width:135px;
+    height:39px;
+    background-color: #0F3D2A;
+    border-color: #2CAE77;
+    border-radius: 30px;
+    border-width: 1px;
+    color:white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+ #buttons{
+    margin-top: 100px;
+} 
+
+
+
+
+/* Girl Images */
+section#images{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+.image{
+    height: 280px;
+    width:393px;
+    background: transparent;
+    color: white;
+    border: 1px white;
+    border-style: ridge;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.image .girl{
+    width:393px;
+    height:170px;
+}
+
+.image .love{
+    margin-left: 340px; 
+    margin-top: -30px;
+    width:35px;
+    height:35px;
+}
+
+.text img{
+    width:16px;
+    height:16px;
+}
+
+div.text{
+    margin-left: 30px;  
+}
+
+/* How Concertz Works */
+
+div#how{
+    margin-top: 114px;
+    color: white;
+    margin-left: 100px;
+}
+
+/* Steps */
+
+section#steps{
+    display:block;
+    flex-wrap: wrap; 
+    
+}
+.how-text{
+    font-size: 54px; 
+    font-weight: 400;
+}
+.step{
+    width: 367px;
+    height:363px;
+    border: 1px white;
+    border-style: ridge;
+    padding-left:24px;
+    padding-top: 24px;
+    margin-left: 30px;
+}
+
+button#connect{
+    width: 185px;
+    height: 55px;
+    background-color: #2CAE77;
+    margin-top: 32px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+   }
+
+section#steps{
+    display:flex;
+    margin-left: -30px;
+}
+
+/* Footer */
+
+#main-footer .logo{
+    width:259.4px; 
+    height:57px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+/* Handles */
+#main-footer .handles{
+    width:230px;
+    height:30px;
+
+}
+
+#main-footer .bottom{
+    display: flex;
+    justify-content: center;
+}
+
+span#footer-text{
+    margin-top: 105px;
+    margin-left: 233px;
+}
+
+
+/* Media Responsive */
+
+/*Tablet Response*/
+@media(max-width:1000px){
+
+    .navbar .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding-top: 10px;
+        
+    }
+
+    .navbar ul li{
+        margin: 0px 10px;
+    }
+
+    #wallet{
+        width: 125px;
+        height: 45px;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: -100px;
+    }
+
+    .navbar .sub-container{
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .container img{
+        margin-left: 25px;
+    }
+
+    p#large-header{
+        font-size: 54px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }  
+    
+    div#search{
+        width:500px;
+        height:82px;
+        background-color: rgb(0,0,0,0.7); 
+        margin: auto; 
+        border-style: ridge;
+        border-width: 1px;  
+        border-color: grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+    }
+    
+    input.search{
+        width:400px;
+        font-size: 18px;
+        font-weight: 200;
+        margin-left: 10px;
+    }
+    
+    button#search{
+        width:105px;
+        height:55px;
+        font-size: 18px;
+        margin-left: -80px;
+    }
+
+    #location #container{
+        margin-left: -70px;
+    }
+
+    section#black-pages{
+        height:2700px;
+    }
+
+    .image .girl{
+        width:300px;
+    }
+    
+    .image .love{
+        margin-left: 250px; 
+    }
+    
+    
+    .image{
+        width:300px;
+    }
+
+    div#how{
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .how-text{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    section#steps{
+        display:flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin-left: 50px;
+
+    }
+    .step{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    
+}
+
+/*Mobile Response*/
+@media(max-width:600px){
+
+    .navbar .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding-top: 10px;
+        
+    }
+
+    .navbar .sub-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navbar ul{
+        display: flex; 
+        justify-content: center;
+        margin-left: 100px;
+
+    }
+
+    #wallet{
+        width: 125px;
+        height: 45px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .header-text .container{
+        margin-top: 150px;
+    }
+    p#large-header{
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }  
+
+    p.sub-header{
+        font-size: 20px;
+        font-weight: 400;
+        
+    }
+    
+    div#search{
+        width:420px;
+        height:70px;
+        background-color: rgb(0,0,0,0.7); 
+        margin: auto; 
+        border-style: ridge;
+        border-width: 1px;  
+        border-color: grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        margin-top: 20px;
+    }
+    
+    input.search{
+        width:400px;
+        font-size: 16px;
+        font-weight: 200;
+        margin-left: 10px;
+    }
+
+    button#search{
+        width:85px;
+        height:35px;
+        font-size: 16px;
+        margin-left: -130px;
+    }
+
+    #location #container{
+        margin-left: -70px;
+    }
+    
+    p#browse{
+        font-size: 20px;
+    }
+    
+    h1#browse{
+        font-size: 38px;
+    }
+    div#lagos{
+        display: flex; 
+    }
+
+    button#date{
+        margin-top: 10px;
+        margin-left: 0px;
+    } 
+    
+    #buttons{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    section#black-pages{
+        height:4000px;
+    }
+
+    section#steps{
+        display:block;
+        flex-wrap: wrap; 
+        
+    }
+    .step{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
