@@ -131,6 +131,12 @@ div#search{
     display: flex;
     justify-content: space-around;
     align-items: center;  
+    padding-right: 10px;
+    
+}
+
+div#search img{
+    padding: 10px;
 }
 
 input.search{
@@ -139,10 +145,10 @@ input.search{
     width:400px;
     font-size: 24px;
     font-weight: 200;
-    margin-left: 10px;
+
 }
 
-#search input[type=search]{
+#search input[type=text]{
     color:white;
 }
 
@@ -157,7 +163,7 @@ button#search{
     width:125px;
     height:55px;
     margin: auto;
-    margin-left: 80px;
+    
     font-size: 18px;
     font-weight: 700;
     border:none;
@@ -174,13 +180,14 @@ section#black-pages{
 
 /* Location and browse concerts */
 div#location{
-    height:190px;
-    margin-left: 100px;
+    /* height:190px; */
+    padding-left: 100px;
     padding-top: 150px;
     line-height: 0.2em;
-    display: flex;
-    justify-content: space-between;
     animation: slideInFromLeft 1s ease-in;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+
 }
 
 div#location img{
@@ -229,6 +236,12 @@ button#date{
  #buttons{
     margin-top: 100px;
 } 
+
+#bottom-lagos{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
 
 
@@ -342,7 +355,8 @@ section#steps{
 
 span#footer-text{
     margin-top: 105px;
-    margin-left: 233px;
+    margin-left: 233px; 
+   
 }
 
 
@@ -424,7 +438,7 @@ span#footer-text{
     }
 
     .navbar .container img{
-        margin-left: 25px;
+        /* margin-left: 25px; */
     }
 
     p#large-header{
@@ -443,21 +457,29 @@ span#footer-text{
         border-color: grey;
         display: flex;
         justify-content: space-between;
-        align-items: center;  
+        align-items: center; 
+        height: 100%; 
+    }
+
+    form{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
     }
     
     input.search{
         width:400px;
         font-size: 18px;
         font-weight: 200;
-        margin-left: 10px;
+
     }
     
     button#search{
-        width:105px;
-        height:55px;
+        width:95px;
+        height:45px;
         font-size: 18px;
-        margin-left: -80px;
+        margin-left: -70px;
     }
 
     #location #container{
@@ -501,8 +523,7 @@ span#footer-text{
     .step{
         margin-top: 20px;
         margin-left: 30px;
-    }
-    
+    }   
 }
 
 /*Mobile Response*/
@@ -571,14 +592,14 @@ span#footer-text{
         width:400px;
         font-size: 16px;
         font-weight: 200;
-        margin-left: 10px;
+
     }
 
     button#search{
+        
         width:85px;
         height:35px;
         font-size: 16px;
-        margin-left: -130px;
     }
 
     #location #container{
@@ -592,6 +613,7 @@ span#footer-text{
     h1#browse{
         font-size: 38px;
     }
+
     div#lagos{
         display: flex; 
     }
