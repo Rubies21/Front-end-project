@@ -131,7 +131,7 @@ div#search{
     display: flex;
     justify-content: space-around;
     align-items: center;  
-    padding-right: 10px;
+    padding-right: 5px;
     
 }
 
@@ -162,8 +162,7 @@ button#search{
     background-color: #2CAE77;
     width:125px;
     height:55px;
-    margin: auto;
-    
+
     font-size: 18px;
     font-weight: 700;
     border:none;
@@ -171,22 +170,23 @@ button#search{
 
 /* Section of the pages with black background */
 section#black-pages{
-    height:1968px;
+    /* height:1800px; */
     overflow:auto;
     background-color: #0a0a0a;
     color: white;
     margin-right: -5px;
+
 }
 
 /* Location and browse concerts */
 div#location{
-    /* height:190px; */
+    
     padding-left: 100px;
-    padding-top: 150px;
+    padding-top: 75px;
     line-height: 0.2em;
     animation: slideInFromLeft 1s ease-in;
-    border-bottom: 1px solid white;
-    padding-bottom: 20px;
+    border-bottom: 0.5px solid white;
+    padding-bottom: 30px;
 
 }
 
@@ -199,6 +199,7 @@ div#location img{
 p#browse{
     font-size: 24px;
     font-weight: 100;
+    
 }
 
 h1#browse{
@@ -207,7 +208,8 @@ h1#browse{
 }
 div#lagos{
     display: flex;
-    margin-top: -60px;
+    padding-top: 50px;
+ 
 }
 
 button#artist{
@@ -234,7 +236,7 @@ button#date{
 }
 
  #buttons{
-    margin-top: 100px;
+    padding-top: 40px;
 } 
 
 #bottom-lagos{
@@ -272,10 +274,9 @@ section#images{
 }
 
 .image .love{
-    margin-left: 340px; 
-    margin-top: -30px;
-    width:35px;
-    height:35px;
+    margin-top: -50px;
+    margin-left: 330px;
+
 }
 
 .text img{
@@ -284,15 +285,17 @@ section#images{
 }
 
 div.text{
-    margin-left: 30px;  
+    padding-left: 60px;  
+    padding-top: 0px;
 }
+
 
 /* How Concertz Works */
 
 div#how{
-    margin-top: 114px;
+    margin-top: 84px; 
     color: white;
-    margin-left: 100px;
+    padding-left: 100px;
 }
 
 /* Steps */
@@ -301,20 +304,29 @@ section#steps{
     display:block;
     flex-wrap: wrap; 
     animation: slideInFromRight 1s ease-in;
+    padding-top: 30px;
     
+}
+
+.number{
+    width: 58px;
+    height: 58px;
+    background-color: #121212;
+    padding: 11px 20px;
+    font-size: 26px;
 }
 .how-text{
     font-size: 54px; 
-    font-weight: 400;
+    font-weight: 300;
 }
 .step{
-    width: 367px;
+    width: 393px;
     height:363px;
     border: 1px white;
     border-style: ridge;
     padding-left:24px;
     padding-top: 24px;
-    margin-left: 30px;
+
 }
 
 button#connect{
@@ -327,24 +339,35 @@ button#connect{
     font-weight: 500;
    }
 
+   .section-div{
+        border-bottom: 0.5px solid #BDBDBD; 
+        /* width:100%; */
+   }
+
 section#steps{
     display:flex;
-    margin-left: -30px;
+    padding-bottom: 300px;
+    padding-left: -30px;
+   
+}
+.line{
+    border-bottom: 1px solid white;
 }
 
 /* Footer */
 
 #main-footer .logo{
-    width:259.4px; 
-    height:57px;
-    margin-left: 100px;
-    margin-top: 50px;
+
+    padding-left: 0px;
+    padding-top: 50px;
 }
 
 /* Handles */
 #main-footer .handles{
     width:230px;
     height:30px;
+    display: flex;
+    justify-content: space-around;
 
 }
 
@@ -353,10 +376,20 @@ section#steps{
     justify-content: center;
 }
 
-span#footer-text{
-    margin-top: 105px;
-    margin-left: 233px; 
-   
+#footer-text{
+    padding-top: 150px;
+    padding-left: 233px; 
+    font-weight: 100;
+}
+
+#part-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+}
+
+#main-footer{
+    padding-top: -100px;
 }
 
 
@@ -498,6 +531,10 @@ span#footer-text{
         margin-left: 250px; 
     }
     
+    div.text{
+        padding-left: 60px;  
+        padding-top: 0px;
+    }
     
     .image{
         width:300px;

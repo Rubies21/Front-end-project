@@ -58,18 +58,14 @@
                     <button id="artist">Filter by Artist</button>
                     <button id="date">Filter by Date</button>
                 </div>
-                        <a href="#" style="text-decoration: none; color:white;">All Concerts</a>
-                 
-                    
-           
+                <div class="all" >
+                        <a href="#" style="text-decoration: none; color:white;">All Concerts </a>
+                 </div>          
                 </div>
             </div>
-            
         </div>
             
-        <!-- <hr class="line" style="background-color:#4F5254; margin-top: 80px;"> -->
-        
-
+        <!-- Girl Images -->
         <section id="images">
 
             <div class="image">
@@ -139,12 +135,14 @@
             </div>
         </section>
 
+        <div class="line">
         <div id="how">
             <!-- How Concertz Works -->
             <p class="how-text">How Concertz Works</p>
             <section id="steps">
                 <div class="step">
-                    <img src="images/one.svg" width="58px" height="58px">
+                    <div class="number">1</div>
+                    <!-- <<img src="images/one.svg" width="58px" height="58px">> -->
                     <p style="font-size: 33.37px; margin-top: 0px;">Connect Wallet</p>
                     <p style="font-size: 18px;margin-top:10px; font-weight: 100;">After taking a glance at the homepage,</p>
                     <p style="font-size: 18px;margin-top:10px; font-weight: 100;">Connecting to Wallet gives the user </p>
@@ -152,10 +150,10 @@
                 
                     <button id="connect">Connect Wallet</button>
                 </div>
-
+ 
                 <!-- Steps -->
                 <div class="step">
-                    <img src="images/two.svg" width="58px" height="58px">
+                    <div class="number">2</div>
                     <p style="font-size: 33.37px; margin-top: 0px;">Create a Concert</p>
                     <p style="font-size: 18px;margin-top: 10px; font-weight: 100;">Users (Artist) can create concert on our</p>
                     <p style="font-size: 18px;margin-top:10px; font-weight: 100;">platform. Creating a concert requires a </p>
@@ -165,7 +163,7 @@
                 </div>
 
                 <div class="step">
-                    <img src="images/three.svg" width="58px" height="58px">
+                    <div class="number">3</div>
                     <p style="font-size: 33.37px; margin-top: 0px;">Buy/Resale Ticket</p>
                     <p style="font-size: 18px;margin-top:10px; font-weight: 100;">Users can buy tickets and resale before</p> 
                     <p style="font-size: 18px;margin-top:10px; font-weight: 100;">the concert. Tickets can also be stored as</p>
@@ -174,21 +172,33 @@
                     <button id="connect">Collections</button>
                 </div>
             </section>
-                <hr style="margin-top: 176px;margin-left: -100px;">
+            </div>
+            </div>
+                <!-- <hr style="margin-top: 176px;margin-left: -100px;"> -->
                 
                 <!-- Footer -->
                 <footer id="main-footer">
-                    <img class="logo" src="images/logo.svg">
-                    <div class = "bottom">
-                        <span id="footer-text"> 
-                            &copy; &nbsp; 2022  Concertz. All Rights Reserved
-                        </span>
+                    <div id="part-footer">
+                        <img class="logo" src="images/logo.svg">
                         <span style="font-weight: 100;display:flex;align-items:center">Our Socials
-                            <img class="handles" src="images/handles.svg">
-                        </span>
+                                <div class="handles">
+                                    <a href="#"><img src="images/twitter.svg" alt=""></a>
+                                    <a href="#"><img src="images/instagram.svg" alt=""></a>
+                                    <a href="#"><img src="images/telegram.svg" alt=""></a>
+                                    <a href="#"><img src="images/discord.svg" alt=""></a>
+                                    <a href="#"><img src="images/medium.svg" alt=""></a>
+                                    
+                                </div>
+                            </span> 
+                     </div>
+                    <div class = "bottom">
+                        <div id="footer-text"> 
+                            &copy; &nbsp; 2022  Concertz. All Rights Reserved
+                        </div>
+                        
+                        
                     </div>
-                </footer>
-        
+                </footer> 
     </section>
 </body>
 </html>
