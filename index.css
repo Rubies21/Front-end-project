@@ -56,9 +56,6 @@ section#first-page{
 
 }
 
-.navbar ul li{
-  
-}
 
 .navbar a{
     text-decoration: none;
@@ -122,19 +119,17 @@ div#search{
     width:676px;
     height:82px;
     background-color: rgb(0,0,0,0.7); 
-    margin: auto; 
+    /* margin: auto;  */
     border-style: ridge;
     border-width: 1px;  
     border-color: grey;
     display: flex;
     justify-content: space-around;
-    align-items: center;  
-    padding-right: 5px;
-    
+    align-items: center;       
 }
 
 div#search img{
-    padding: 10px;
+
 }
 
 input.search{
@@ -143,6 +138,7 @@ input.search{
     width:400px;
     font-size: 24px;
     font-weight: 200;
+    padding-left: -50px;
 
 }
 
@@ -511,25 +507,13 @@ footer{
     .navbar .container{
         display:flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        padding-top: 10px;
-        
     }
 
     .navbar .sub-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
     }
 
-    .navbar ul{
-        display: flex; 
-        justify-content: center;
-        margin-left: 100px;
-
+    .navbar a{
+        padding: 10px;
     }
 
     #wallet{
@@ -538,13 +522,11 @@ footer{
         font-weight: 500;
         font-size: 14px;
     }
-    .header-text .container{
-        margin-top: 150px;
-    }
+
     p#large-header{
         font-size: 40px;
         font-weight: 600;
-        margin-bottom: 20px;
+
     }  
 
     p.sub-header{
@@ -564,7 +546,7 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;  
-        margin-top: 20px;
+
     }
     
     input.search{
@@ -575,16 +557,12 @@ footer{
     }
 
     button#search{
-        
         width:85px;
         height:35px;
         font-size: 16px;
+        margin-left: -200px;
     }
 
-    #location #container{
-        margin-left: -70px;
-    }
-    
     p#browse{
         font-size: 20px;
     }
@@ -597,27 +575,34 @@ footer{
         display: flex; 
     }
 
-    button#date{
-        margin-top: 10px;
-        margin-left: 0px;
+    #bottom-lagos{
     } 
-    
+
     #buttons{
         margin-top: 80px;
         display: flex;
         flex-direction: column;
     }
-    section#black-pages{
-        height:4000px;
+    .how-text{
+        font-size: 40px;
     }
+    /* section#black-pages{
+        height:4000px;
+    } */
 
     section#steps{
         display:block;
         flex-wrap: wrap; 
         
     }
-    .step{
-        margin-left: 0px;
-        margin-top: 20px;
+
+    .footer_part{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer_part img{
+        width:200px;
     }
 }
