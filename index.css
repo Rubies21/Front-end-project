@@ -15,16 +15,14 @@ body{
 section#first-page{
     background-image: url("../images/first-main.png");
     height:716px;
-    margin: -5px -5px 0px -5px; 
+    
 }
 
 /* All that pertains to the Navbar */
 .navbar{
     background-color: rgba(0, 0, 0, 0.5);
-    height:116px;
-    border-bottom: black;
-    border-width: 1px;
-    border-style: ridge;
+    height: 116px;
+    border-bottom: 1px solid black;
     animation: slideInFromTop 1s ease-in;
 
 }
@@ -34,6 +32,7 @@ section#first-page{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    padding: 20px;
 }
 
 .navbar .sub-container{
@@ -41,12 +40,14 @@ section#first-page{
     height: 100%;
     justify-content: space-between;
     align-items: center;  
-    margin-right: 100px;
+    padding: 100px;
+
+
     
 }
 
 .navbar .container img{
-    margin-left: 100px;
+
 }
 
 .navbar ul{
@@ -56,7 +57,7 @@ section#first-page{
 }
 
 .navbar ul li{
-    margin: 0px 30px;
+  
 }
 
 .navbar a{
@@ -65,6 +66,7 @@ section#first-page{
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    padding: 30px;
 }
 
 .navbar a:hover{
@@ -73,14 +75,13 @@ section#first-page{
 
 /* Navbar button */
 #wallet{
-    padding: auto;
     background-color: #2CAE77;
     width: 185px;
     height: 55px;
     color: white;
     font-size: 18px;
     font-weight: bolder;
-    border-style: none;   
+    border-style: none;
 }
 
 .navbar ul{
@@ -89,7 +90,7 @@ section#first-page{
     height: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-right: 100px; 
+
 }
 
 .header-text .container{
@@ -97,7 +98,7 @@ section#first-page{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 160px;
+
     animation: slideInFromBottom 1s ease-in;
 
 }
@@ -106,16 +107,14 @@ section#first-page{
 p#large-header{
     font-size: 64px;
     font-weight: 600;
-    margin-bottom: 30px;
-
-
+    padding-top: 200px;
 }  
 /* Sub-Text */
 p.sub-header{
     font-size: 24px;
     font-weight: 300;
     line-height: 40px;
-    margin-top: -10px;
+
 }
 
 /* Search for artists, events and venue */
@@ -124,7 +123,6 @@ div#search{
     height:82px;
     background-color: rgb(0,0,0,0.7); 
     margin: auto; 
-    margin-top: 20px;
     border-style: ridge;
     border-width: 1px;  
     border-color: grey;
@@ -162,7 +160,6 @@ button#search{
     background-color: #2CAE77;
     width:125px;
     height:55px;
-
     font-size: 18px;
     font-weight: 700;
     border:none;
@@ -173,8 +170,6 @@ section#black-pages{
     overflow:auto;
     background-color: #0a0a0a;
     color: white;
-    margin-right: -5px;
-
 }
 
 /* Location and browse concerts */
@@ -189,12 +184,6 @@ div#location{
 
 }
 
-div#location img{
-    margin-left: 15px;
-    margin-top: 80px;
- 
-}
-
 p#browse{
     font-size: 24px;
     font-weight: 100;
@@ -207,6 +196,7 @@ h1#browse{
 }
 div#lagos{
     display: flex;
+    justify-content: start;
     padding-top: 50px;
  
 }
@@ -231,7 +221,7 @@ button#date{
     border-width: 1px;
     color:white;
     font-size: 16px;
-    margin-left: 20px;
+
 }
 
  #buttons{
@@ -244,16 +234,17 @@ button#date{
     align-items: baseline;
 }
 
-
-
-
 /* Girl Images */
 section#images{
-    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
-    animation: slideInFromLeft 1s ease-in;   
+    animation: slideInFromLeft 1s ease-in;  
+    padding:50px; 
+}
+
+.image-div{
+    padding: 10px;
 }
 
 .image{
@@ -263,21 +254,20 @@ section#images{
     color: white;
     border: 1px white;
     border-style: ridge;
-    margin-top: 30px;
-    margin-left: 30px;
+    position: relative;
+
 }
 
-.image .girl{
+.girl{
     width:393px;
     height:170px;
+    position:relative; 
 }
-
-.image .love{
-    margin-top: -50px;
-    margin-left: 330px;
-
+.love{
+    top: 150px;
+    right: 10px;
+    position: absolute;
 }
-
 .text img{
     width:16px;
     height:16px;
@@ -285,25 +275,26 @@ section#images{
 
 div.text{
     padding-left: 60px;  
-    padding-top: 0px;
+    padding-top: 20px;
 }
 
 
 /* How Concertz Works */
 
 div#how{
-    margin-top: 84px; 
+
     color: white;
     padding-left: 100px;
+    padding-top: 20px;
 }
 
 /* Steps */
 
 section#steps{
-    display:block;
-    flex-wrap: wrap; 
+    display:flex;
     animation: slideInFromRight 1s ease-in;
     padding-top: 30px;
+    padding-right: 100px;
     
 }
 
@@ -317,6 +308,9 @@ section#steps{
 .how-text{
     font-size: 54px; 
     font-weight: 300;
+}
+.step-div{
+    padding:10px;
 }
 .step{
     width: 393px;
@@ -332,15 +326,15 @@ button#connect{
     width: 185px;
     height: 55px;
     background-color: #2CAE77;
-    margin-top: 32px;
+
     color: white;
     font-size: 18px;
     font-weight: 500;
    }
 
-   .section-div{
+    .section-div{
         border-bottom: 0.5px solid #BDBDBD; 
-        /* width:100%; */
+        width:100%; 
    }
 
 section#steps{
@@ -355,41 +349,37 @@ section#steps{
 
 /* Footer */
 
-#main-footer .logo{
-
-    padding-left: 0px;
-    padding-top: 50px;
+footer{
+    padding-top: 40px;
+    width: 100%;
 }
-
 /* Handles */
-#main-footer .handles{
+.handles{
     width:230px;
     height:30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+}
+
+.footer_part{
+    display: flex;
+    justify-content: space-between;  
+    padding-bottom: 70px;
+
 
 }
 
-#main-footer .bottom{
+.footer_text{
     display: flex;
     justify-content: center;
 }
 
-#footer-text{
-    padding-top: 150px;
-    padding-left: 233px; 
-    font-weight: 100;
-}
 
-#part-footer{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0px;
-}
-
-#main-footer{
-    padding-top: -100px;
-}
 
 
 /* Animations */
@@ -441,17 +431,11 @@ section#steps{
 @media(max-width:1000px){
 
     .navbar .container{
-        display:flex;
+
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        padding-top: 10px;
+        padding:0;
         
-    }
-
-    .navbar ul li{
-        margin: 0px 10px;
     }
 
     #wallet{
@@ -459,31 +443,24 @@ section#steps{
         height: 45px;
         font-weight: 500;
         font-size: 14px;
-        margin-left: -100px;
+
     }
 
     .navbar .sub-container{
         display: flex;
-        height: 100%;
+        padding: 0px;
         justify-content: space-between;
-        align-items: center;
-    }
-
-    .navbar .container img{
-        /* margin-left: 25px; */
     }
 
     p#large-header{
         font-size: 54px;
         font-weight: 600;
-        margin-bottom: 20px;
     }  
     
     div#search{
         width:500px;
         height:82px;
         background-color: rgb(0,0,0,0.7); 
-        margin: auto; 
         border-style: ridge;
         border-width: 1px;  
         border-color: grey;
@@ -491,6 +468,7 @@ section#steps{
         justify-content: space-between;
         align-items: center; 
         height: 100%; 
+        padding: 0px;
     }
 
     form{
@@ -498,68 +476,33 @@ section#steps{
         justify-content: space-around;
         align-items: center;
         height: 100%;
+        padding: 0px;
     }
     
     input.search{
         width:400px;
         font-size: 18px;
-        font-weight: 200;
-
+        font-weight: 200;       
     }
     
     button#search{
         width:95px;
         height:45px;
         font-size: 18px;
-        margin-left: -70px;
-    }
-
-    #location #container{
-        margin-left: -70px;
     }
 
     section#black-pages{
         height:2700px;
     }
 
-    .image .girl{
-        width:300px;
-    }
-    
-    .image .love{
-        margin-left: 250px; 
-    }
-    
-    div.text{
-        padding-left: 60px;  
-        padding-top: 0px;
-    }
-    
-    .image{
-        width:300px;
-    }
-
-    div#how{
-        margin: auto;
-        margin-top: 50px;
-    }
-
-    .how-text{
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
     section#steps{
         display:flex;
         flex-wrap: wrap; 
         justify-content: center;
-        margin-left: 50px;
+        /* padding-bottom: 170px;  */
 
     }
-    .step{
-        margin-top: 20px;
-        margin-left: 30px;
-    }   
+
 }
 
 /*Mobile Response*/
