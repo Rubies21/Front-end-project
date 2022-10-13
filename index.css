@@ -46,16 +46,10 @@ section#first-page{
     
 }
 
-.navbar .container img{
-
-}
-
 .navbar ul{
     list-style-type: none;   
     display: flex; 
-
 }
-
 
 .navbar a{
     text-decoration: none;
@@ -163,7 +157,8 @@ button#search{
     border:none;
     position: absolute;
     right:20px;
-    top:0.75em;
+    top: 50%; 
+    transform: translateY(22%); 
  
 }
 
@@ -176,14 +171,12 @@ section#black-pages{
 
 /* Location and browse concerts */
 div#location{
-    
-    padding-left: 100px;
+    padding-left: 60px;
     padding-top: 75px;
     line-height: 0.2em;
     animation: slideInFromLeft 1s ease-in;
     border-bottom: 0.5px solid white;
     padding-bottom: 30px;
-
 }
 
 p#browse{
@@ -467,22 +460,19 @@ footer{
         border-width: 1px;  
         border-color: grey;
     }
-
-    form{
-        
-    }
     
     input.search{
         width:400px;
         font-size: 18px;
         font-weight: 200;  
-        top: 30px     
+        transform: translateY(50%);
     }
     
     button#search{
         width:95px;
         height:45px;
         font-size: 18px;
+        transform: translateY(38%);
     }
 
     section#black-pages{
@@ -548,14 +538,12 @@ footer{
         width:400px;
         font-size: 16px;
         font-weight: 200;
-        top: 25px;
     }
 
     button#search{
         width:85px;
         height:35px;
         font-size: 16px;
-        top:1.1em;
     }
 
     p#browse{
